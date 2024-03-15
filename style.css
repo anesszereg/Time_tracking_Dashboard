@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226, 43%, 10%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2, 300px);
+  gap: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+
+.image_container{
+    height: 20%;
+    overflow: hidden;
+     display: flex;
+     padding-right: 20px;
+     justify-content: end; 
+}
+
+.image_container img{
+    width: auto;
+    height: 10vh;
+    margin-top: -10px;
+}
+.text-container {
+  background-color: hsl(235, 46%, 20%);
+  /* height:100% ; */
+  padding: 30px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  height: 90%;
+}
+
+.card1 {
+  background-color: hsl(235, 46%, 20%);
+  grid-row: span 2;
+}
+
+.card:nth-child(2) {
+  background-color: hsl(15, 100%, 70%);
+}
+.card:nth-child(3) {
+  background-color: hsl(195, 74%, 62%);
+}
+.card:nth-child(4) {
+  background-color: hsl(348, 100%, 68%);
+}
+.card:nth-child(5) {
+  background-color: hsl(145, 58%, 55%);
+}
+.card:nth-child(6) {
+  background-color: hsl(264, 64%, 52%);
+}
+.card:nth-child(7) {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(264, 64%, 52%);
+  padding: 30px;
+  border-radius: 15px;
+  height: 67%;
+}
+
+.image img {
+  width: 34%;
+  height: 23%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+.sub_title {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(236, 100%, 87%);
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 45px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+
+.date{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:  30px;
+    color: hsl(236, 100%, 87%);
+    font-size: 17px;
+
+}
+
+
+.date p:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.text_dots{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hours{
+    font-size: 68px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.desc{
+    font-size: 17px;
+    font-weight: 400;
+    color: hsl(236, 100%, 87%);
+
+}
